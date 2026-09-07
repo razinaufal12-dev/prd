@@ -106,7 +106,7 @@ export default function WorkspacePage() {
             <Button
               variant="outline"
               className="w-full rounded-md border-white/15 bg-white/10 text-white hover:bg-white/15"
-              render={<Link href="/dashboard" />}
+              render={<Link href="../dashboard" />}
             >
               <ArrowLeft className="h-4 w-4" aria-hidden="true" />
               Dashboard
@@ -118,7 +118,7 @@ export default function WorkspacePage() {
           <header className="sticky top-0 z-20 flex min-h-20 items-center justify-between gap-4 border-b border-border bg-white/88 px-5 backdrop-blur sm:px-8">
             <div className="min-w-0">
               <Link
-                href="/projects/plan"
+                href="plan"
                 className="mb-1 inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -135,7 +135,7 @@ export default function WorkspacePage() {
               <Button variant="outline" size="icon-lg" className="rounded-md bg-white" aria-label="More actions">
                 <MoreHorizontal className="h-5 w-5" aria-hidden="true" />
               </Button>
-              <Button className="rounded-md" render={<Link href="/projects/tasks" />}>
+              <Button className="rounded-md" render={<Link href="tasks" />}>
                 <ListChecks className="h-4 w-4" aria-hidden="true" />
                 Create Development Tasks
               </Button>

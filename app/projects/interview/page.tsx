@@ -53,7 +53,7 @@ export default function InterviewPage() {
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">
       <div className="mx-auto grid min-h-screen max-w-7xl gap-6 px-5 py-6 sm:px-8 lg:grid-cols-[280px_1fr] lg:px-10">
         <aside className="rounded-lg border border-border bg-[#10211f] p-5 text-white lg:sticky lg:top-6 lg:h-[calc(100vh-48px)]">
-          <Link href="/dashboard" className="flex items-center gap-3">
+          <Link href="../dashboard" className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-md bg-teal-300 text-teal-950">
               <Sparkles className="h-5 w-5" aria-hidden="true" />
             </span>
@@ -92,7 +92,7 @@ export default function InterviewPage() {
           <header className="mb-6 flex flex-col justify-between gap-4 rounded-lg border border-border bg-white p-5 shadow-sm sm:flex-row sm:items-center">
             <div>
               <Link
-                href="/projects/new"
+                href="new"
                 className="mb-3 inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -112,7 +112,7 @@ export default function InterviewPage() {
           </header>
 
           <div className="grid gap-6 xl:grid-cols-[1fr_360px]">
-            <form action="/projects/analysis" className="rounded-lg border border-border bg-white p-5 shadow-sm sm:p-7">
+            <form action="analysis" className="rounded-lg border border-border bg-white p-5 shadow-sm sm:p-7">
               <div className="flex items-start gap-4 rounded-lg bg-[#112320] p-5 text-white">
                 <span className="grid h-11 w-11 flex-none place-items-center rounded-md bg-teal-300 text-teal-950">
                   <Bot className="h-6 w-6" aria-hidden="true" />
@@ -148,7 +148,7 @@ export default function InterviewPage() {
                   variant="outline"
                   size="lg"
                   className="rounded-md bg-white"
-                  render={<Link href="/projects/new" />}
+                  render={<Link href="new" />}
                 >
                   Back to idea
                 </Button>

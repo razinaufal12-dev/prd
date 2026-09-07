@@ -61,14 +61,14 @@ export default function AuthPage() {
         <div className="mx-auto grid min-h-screen max-w-7xl gap-8 px-5 py-6 sm:px-8 lg:grid-cols-[1fr_480px] lg:px-10">
           <div className="flex min-h-[48vh] flex-col">
             <header className="flex items-center justify-between gap-4">
-              <Link href="/" className="flex items-center gap-3" aria-label="PlanAI home">
+              <Link href="./" className="flex items-center gap-3" aria-label="PlanAI home">
                 <span className="grid h-10 w-10 place-items-center rounded-md bg-foreground text-background">
                   <Sparkles className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <span className="text-lg font-semibold">PlanAI</span>
               </Link>
               <Link
-                href="/"
+                href="./"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -137,7 +137,7 @@ export default function AuthPage() {
                 </TabsList>
 
                 <TabsContent value="signup">
-                  <form action="/dashboard" className="grid gap-5">
+                  <form action="dashboard" className="grid gap-5">
                     <AuthField
                       id="signup-name"
                       label="Name"
@@ -164,7 +164,7 @@ export default function AuthPage() {
                 </TabsContent>
 
                 <TabsContent value="login">
-                  <form action="/dashboard" className="grid gap-5">
+                  <form action="dashboard" className="grid gap-5">
                     <AuthField
                       id="login-email"
                       label="Email"

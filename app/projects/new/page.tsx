@@ -88,7 +88,7 @@ export default function NewProjectPage() {
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">
       <div className="mx-auto grid min-h-screen max-w-7xl gap-6 px-5 py-6 sm:px-8 lg:grid-cols-[280px_1fr] lg:px-10">
         <aside className="rounded-lg border border-border bg-[#10211f] p-5 text-white lg:sticky lg:top-6 lg:h-[calc(100vh-48px)]">
-          <Link href="/dashboard" className="flex items-center gap-3" aria-label="Back to dashboard">
+          <Link href="../dashboard" className="flex items-center gap-3" aria-label="Back to dashboard">
             <span className="grid h-10 w-10 place-items-center rounded-md bg-teal-300 text-teal-950">
               <Sparkles className="h-5 w-5" aria-hidden="true" />
             </span>
@@ -133,7 +133,7 @@ export default function NewProjectPage() {
           <header className="mb-6 flex flex-col justify-between gap-4 rounded-lg border border-border bg-white p-5 shadow-sm sm:flex-row sm:items-center">
             <div>
               <Link
-                href="/dashboard"
+                href="../dashboard"
                 className="mb-3 inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -153,7 +153,7 @@ export default function NewProjectPage() {
           </header>
 
           <div className="grid gap-6 xl:grid-cols-[1fr_360px]">
-            <form action="/projects/interview" className="rounded-lg border border-border bg-white p-5 shadow-sm sm:p-7">
+            <form action="interview" className="rounded-lg border border-border bg-white p-5 shadow-sm sm:p-7">
               <div className="grid gap-5">
                 <div className="grid gap-5 md:grid-cols-2">
                   <FormField label="Project name">
@@ -243,7 +243,7 @@ export default function NewProjectPage() {
               </div>
 
               <div className="mt-7 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:justify-between">
-                <Button variant="outline" size="lg" className="rounded-md bg-white" render={<Link href="/dashboard" />}>
+                <Button variant="outline" size="lg" className="rounded-md bg-white" render={<Link href="../dashboard" />}>
                   Save as draft
                 </Button>
                 <Button type="submit" size="lg" className="rounded-md">

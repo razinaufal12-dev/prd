@@ -132,7 +132,7 @@ export default function DevelopmentTasksPage() {
           <header className="sticky top-0 z-20 flex min-h-20 items-center justify-between gap-4 border-b border-border bg-white/88 px-5 backdrop-blur sm:px-8">
             <div className="min-w-0">
               <Link
-                href="/projects/workspace"
+                href="workspace"
                 className="mb-1 inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -145,7 +145,7 @@ export default function DevelopmentTasksPage() {
             <Button
               size="lg"
               className="rounded-md"
-              render={<Link href="/projects/coding-prompt" />}
+              render={<Link href="coding-prompt" />}
             >
               Generate AI Coding Prompt
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -244,14 +244,14 @@ export default function DevelopmentTasksPage() {
                   variant="outline"
                   size="lg"
                   className="rounded-md bg-white"
-                  render={<Link href="/projects/workspace" />}
+                  render={<Link href="workspace" />}
                 >
                   Continue editing workspace
                 </Button>
                 <Button
                   size="lg"
                   className="rounded-md"
-                  render={<Link href="/projects/coding-prompt" />}
+                  render={<Link href="coding-prompt" />}
                 >
                   Create AI Coding Prompt
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

@@ -76,7 +76,7 @@ export default function AnalysisPage() {
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">
       <div className="mx-auto grid min-h-screen max-w-7xl gap-6 px-5 py-6 sm:px-8 lg:grid-cols-[280px_1fr] lg:px-10">
         <aside className="rounded-lg border border-border bg-[#10211f] p-5 text-white lg:sticky lg:top-6 lg:h-[calc(100vh-48px)]">
-          <Link href="/dashboard" className="flex items-center gap-3">
+          <Link href="../dashboard" className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-md bg-teal-300 text-teal-950">
               <Sparkles className="h-5 w-5" aria-hidden="true" />
             </span>
@@ -115,7 +115,7 @@ export default function AnalysisPage() {
           <header className="mb-6 flex flex-col justify-between gap-4 rounded-lg border border-border bg-white p-5 shadow-sm sm:flex-row sm:items-center">
             <div>
               <Link
-                href="/projects/interview"
+                href="interview"
                 className="mb-3 inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -226,7 +226,7 @@ export default function AnalysisPage() {
               <Button
                 size="lg"
                 className="h-12 rounded-md"
-                render={<Link href="/projects/plan" />}
+                render={<Link href="plan" />}
               >
                 Generate Product Plan
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />

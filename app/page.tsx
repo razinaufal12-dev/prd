@@ -88,7 +88,7 @@ export default function Home() {
               </a>
             </nav>
             <a
-              href="/auth"
+              href="auth"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 text-sm font-semibold text-primary-foreground shadow-sm transition hover:translate-y-[-1px] hover:shadow-md"
             >
               Login
@@ -110,7 +110,7 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/auth"
+                  href="auth"
                   className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-primary px-6 text-base font-semibold text-primary-foreground shadow-sm transition hover:translate-y-[-1px] hover:shadow-lg"
                 >
                   Start planning
@@ -340,7 +340,7 @@ export default function Home() {
             </button>
           </form>
           <Link
-            href="/auth"
+            href="auth"
             className="mt-5 inline-flex text-sm font-semibold text-teal-800 transition hover:text-teal-950"
           >
             Already have an account? Login to PlanAI

@@ -56,7 +56,7 @@ export function PlanAIExportActions({ promptText }: { promptText: string }) {
         variant="outline"
         size="lg"
         className="h-12 rounded-md bg-white"
-        render={<Link href="/projects/coding-prompt" />}
+        render={<Link href="coding-prompt" />}
       >
         <Pencil className="h-4 w-4" aria-hidden="true" />
         Continue editing

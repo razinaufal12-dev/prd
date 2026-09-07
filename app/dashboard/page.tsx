@@ -171,7 +171,7 @@ export default function DashboardPage() {
               <Button variant="outline" size="icon-lg" className="rounded-md bg-white" aria-label="Settings">
                 <Settings className="h-5 w-5" aria-hidden="true" />
               </Button>
-              <Button size="lg" className="rounded-md" render={<Link href="/projects/new" />}>
+              <Button size="lg" className="rounded-md" render={<Link href="projects/new" />}>
                 <Plus className="h-4 w-4" aria-hidden="true" />
                 Create New Project
               </Button>
