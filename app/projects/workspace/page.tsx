@@ -68,6 +68,8 @@ const tasks = [
   { title: 'Generate task list and coding prompt', area: 'AI output', status: 'Next' },
 ];
 
+export const dynamic = 'force-static';
+
 export default function WorkspacePage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

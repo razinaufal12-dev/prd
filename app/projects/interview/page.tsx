@@ -46,6 +46,8 @@ const context = [
   'Final output: PRD, features, MVP, roadmap, tasks, coding prompt',
 ];
 
+export const dynamic = 'force-static';
+
 export default function InterviewPage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

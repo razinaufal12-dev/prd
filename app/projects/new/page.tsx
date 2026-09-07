@@ -63,6 +63,8 @@ const nextOutputs = [
   },
 ];
 
+export const dynamic = 'force-static';
+
 function FormField({
   label,
   helper,

@@ -96,6 +96,8 @@ Development tasks:
 
 Do not include advanced collaboration, billing, complex analytics, or marketplace features in the MVP. Keep the first version focused on the journey from raw idea to development-ready plan.`;
 
+export const dynamic = 'force-static';
+
 export default function CodingPromptPage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

@@ -69,6 +69,8 @@ const readiness = [
   'AI coding prompt can inherit project context from the living PRD.',
 ];
 
+export const dynamic = 'force-static';
+
 export default function AnalysisPage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

@@ -24,6 +24,8 @@ const accountBenefits = [
   'Bawa PRD, feature list, MVP scope, dan coding prompt dalam satu workspace.',
 ];
 
+export const dynamic = 'force-static';
+
 function AuthField({
   id,
   label,

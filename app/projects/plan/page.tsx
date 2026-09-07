@@ -65,6 +65,8 @@ const taskList = [
   'Create roadmap, tasks, and final AI coding prompt',
 ];
 
+export const dynamic = 'force-static';
+
 export default function ProductPlanPage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

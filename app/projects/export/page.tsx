@@ -81,6 +81,8 @@ const exportOptions = [
   },
 ];
 
+export const dynamic = 'force-static';
+
 export default function ExportPromptPage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

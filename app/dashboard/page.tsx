@@ -106,6 +106,8 @@ const prdSections = [
   'Development tasks',
 ];
 
+export const dynamic = 'force-static';
+
 export default function DashboardPage() {
   return (
     <main className="min-h-screen bg-[#f4f8f7] text-foreground">

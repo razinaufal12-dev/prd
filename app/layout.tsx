@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     'Turn one software idea into a PRD, MVP scope, roadmap, development tasks, and AI coding prompt.',
 };
 
+export const dynamic = 'force-static';
+
 export default function RootLayout({
   children,
 }: Readonly<{
