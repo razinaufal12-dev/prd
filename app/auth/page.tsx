@@ -135,7 +135,7 @@ export default function AuthPage() {
                 </TabsList>
 
                 <TabsContent value="signup">
-                  <form className="grid gap-5">
+                  <form action="/dashboard" className="grid gap-5">
                     <AuthField
                       id="signup-name"
                       label="Name"
@@ -162,7 +162,7 @@ export default function AuthPage() {
                 </TabsContent>
 
                 <TabsContent value="login">
-                  <form className="grid gap-5">
+                  <form action="/dashboard" className="grid gap-5">
                     <AuthField
                       id="login-email"
                       label="Email"
