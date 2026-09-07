@@ -14,7 +14,6 @@ import {
   Map,
   MessageSquareText,
   MoreHorizontal,
-  Rocket,
   Sparkles,
   Target,
 } from 'lucide-react';
@@ -35,14 +34,14 @@ export const metadata: Metadata = {
 };
 
 const workspaceNav = [
-  { label: 'Overview', icon: LayoutDashboard, active: true },
-  { label: 'AI Interview', icon: MessageSquareText },
-  { label: 'Living PRD', icon: FileText },
-  { label: 'Features', icon: ClipboardList },
-  { label: 'MVP', icon: Target },
-  { label: 'Roadmap', icon: Map },
-  { label: 'Tasks', icon: ListChecks },
-  { label: 'Coding Prompt', icon: Code2 },
+  { label: 'Overview', icon: LayoutDashboard, active: true, href: '/projects/workspace' },
+  { label: 'AI Interview', icon: MessageSquareText, href: '/projects/interview' },
+  { label: 'Living PRD', icon: FileText, href: '/projects/plan' },
+  { label: 'Features', icon: ClipboardList, href: '/projects/plan' },
+  { label: 'MVP', icon: Target, href: '/projects/plan' },
+  { label: 'Roadmap', icon: Map, href: '/projects/plan' },
+  { label: 'Tasks', icon: ListChecks, href: '/projects/tasks' },
+  { label: 'Coding Prompt', icon: Code2, href: '/projects/coding-prompt' },
 ];
 
 const readinessItems = [
@@ -85,10 +84,10 @@ export default function WorkspacePage() {
           </div>
 
           <nav className="grid gap-1 px-3 py-5" aria-label="Project navigation">
-            {workspaceNav.map(({ label, icon: Icon, active }) => (
-              <a
+            {workspaceNav.map(({ label, icon: Icon, active, href }) => (
+              <Link
                 key={label}
-                href="#"
+                href={href}
                 className={`flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-semibold transition ${
                   active
                     ? 'bg-white text-[#10211f]'
@@ -97,7 +96,7 @@ export default function WorkspacePage() {
               >
                 <Icon className="h-4 w-4" aria-hidden="true" />
                 {label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -134,9 +133,9 @@ export default function WorkspacePage() {
               <Button variant="outline" size="icon-lg" className="rounded-md bg-white" aria-label="More actions">
                 <MoreHorizontal className="h-5 w-5" aria-hidden="true" />
               </Button>
-              <Button className="rounded-md">
-                <Rocket className="h-4 w-4" aria-hidden="true" />
-                Export prompt
+              <Button className="rounded-md" render={<Link href="/projects/tasks" />}>
+                <ListChecks className="h-4 w-4" aria-hidden="true" />
+                Create Development Tasks
               </Button>
             </div>
           </header>
