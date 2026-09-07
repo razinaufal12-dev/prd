@@ -151,7 +151,7 @@ export default function NewProjectPage() {
           </header>
 
           <div className="grid gap-6 xl:grid-cols-[1fr_360px]">
-            <form action="/dashboard" className="rounded-lg border border-border bg-white p-5 shadow-sm sm:p-7">
+            <form action="/projects/interview" className="rounded-lg border border-border bg-white p-5 shadow-sm sm:p-7">
               <div className="grid gap-5">
                 <div className="grid gap-5 md:grid-cols-2">
                   <FormField label="Project name">
