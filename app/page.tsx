@@ -11,6 +11,7 @@ import {
   Sparkles,
   Target,
 } from 'lucide-react';
+import Link from 'next/link';
 
 const flow = [
   'Idea',
@@ -87,10 +88,10 @@ export default function Home() {
               </a>
             </nav>
             <a
-              href="#waitlist"
+              href="/auth"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 text-sm font-semibold text-primary-foreground shadow-sm transition hover:translate-y-[-1px] hover:shadow-md"
             >
-              Join Waitlist
+              Login
             </a>
           </header>
 
@@ -108,13 +109,13 @@ export default function Home() {
                 tasks, dan coding prompt yang siap dipakai untuk mulai membangun.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="#waitlist"
+                <Link
+                  href="/auth"
                   className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-primary px-6 text-base font-semibold text-primary-foreground shadow-sm transition hover:translate-y-[-1px] hover:shadow-lg"
                 >
-                  Start with an idea
+                  Start planning
                   <ArrowRight className="h-5 w-5" aria-hidden="true" />
-                </a>
+                </Link>
                 <a
                   href="#flow"
                   className="inline-flex h-12 items-center justify-center rounded-md border border-border bg-white/70 px-6 text-base font-semibold text-foreground shadow-sm backdrop-blur transition hover:bg-white"
@@ -338,6 +339,12 @@ export default function Home() {
               <ArrowRight className="h-5 w-5" aria-hidden="true" />
             </button>
           </form>
+          <Link
+            href="/auth"
+            className="mt-5 inline-flex text-sm font-semibold text-teal-800 transition hover:text-teal-950"
+          >
+            Already have an account? Login to PlanAI
+          </Link>
         </div>
       </section>
     </main>
